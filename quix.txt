@@ -7,7 +7,7 @@
 @These are the most basic commands Quix offers, but possibly also the most powerful ones.
 a       http://www.amazon.com/s/?field-keywords=%s							Amazon Search
 d       http://www.google.com/search?q=define:%s							Google Define a word
-cal	javascript:var s;if(window.getSelection){s=window.getSelection();}else{s=document.selection.createRange().text;};var t=prompt('Please enter a description for the event',s);if(t){void(window.open(encodeURI('http://www.google.com/calendar/event?ctext='+t+'&action=TEMPLATE&pprop=HowCreated%3AQUICKADD'),'gcal'));}else{void(s);};
+cal        javascript:var s;if(window.getSelection){s=window.getSelection();}else{s=document.selection.createRange().text;};var t=prompt('Please enter a description for the event',s);if(t){void(window.open(encodeURI('http://www.google.com/calendar/event?ctext='+t+'&action=TEMPLATE&pprop=HowCreated%3AQUICKADD'),'gcal'));}else{void(s);};		creates a Google Calendar event
 dict	http://www.google.com/dictionary?langpair=en%7Cen&q=%s&hl=en&aq=f	Google Dictionary for a word
 e       mailto:?subject=%t&body=%s%0A%0A%09%r%0A%0A							Email link
 f       http://flickr.com/search/?q=%s										Flickr Search
