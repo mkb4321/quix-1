@@ -1,0 +1,29 @@
+> This is a Quix Command File
+>
+> For the syntax of this file, please refer to https://www.quixapp.com/syntax/
+>
+
+@Basic commands
+@These are the most basic commands Quix offers, but possibly also the most powerful ones.
+a       http://www.amazon.com/s/?field-keywords=%s							Amazon Search
+d       http://www.google.com/search?q=define:%s							Google Define a word
+cal	javascript:var s;if(window.getSelection){s=window.getSelection();}else{s=document.selection.createRange().text;};var t=prompt('Please enter a description for the event',s);if(t){void(window.open(encodeURI('http://www.google.com/calendar/event?ctext='+t+'&action=TEMPLATE&pprop=HowCreated%3AQUICKADD'),'gcal'));}else{void(s);};
+dict	http://www.google.com/dictionary?langpair=en%7Cen&q=%s&hl=en&aq=f	Google Dictionary for a word
+e       mailto:?subject=%t&body=%s%0A%0A%09%r%0A%0A							Email link
+f       http://flickr.com/search/?q=%s										Flickr Search
+fc      http://flickr.com/search/?q=%s&l=comm								Flickr Commercial use CC Search
+find		javascript:s='%s';if(s==''){void(s=prompt('Find%20text:',''));}s='('+s+')';x=new%20RegExp(s,'gi');rn=Math.floor(Math.random()*100);rid='z'%20+%20rn;b%20=%20document.body.innerHTML;b=b.replace(x,'<span%20name='%20+%20rid%20+%20'%20id='%20+%20rid%20+%20'%20style=\'color:#000;background-color:yellow;%20font-weight:bold;\'>$1</span>');void(document.body.innerHTML=b);alert('Found%20'%20+%20document.getElementsByName(rid).length%20+%20'%20matches.');window.scrollTo(0,document.getElementsByName(rid)[0].offsetTop); 	Find in current pagem, usage: 'find test' will highlight all occurrences of 'test' and will take you to the first occurrence. Just 'find' will open a prompt.
+g       http://www.google.com/search?q=%s									Google Search
+gbs     http://blogsearch.google.com/blogsearch?q=%s						Google Blog Search
+imdb    http://www.imdb.com/find?s=all&q=%s									IMDB Search
+img     http://www.google.com/images?q=%s									Google Image Search
+map     http://www.google.com/maps?q=%s										Google Maps
+gs      http://www.google.com/search?q=site:%d%20%s							Search the current site with Google
+nf      http://www.netflix.com/Search?v1=%s									Netflix Search
+php     http://php.net/search.php?show=quickref&pattern=%s  				PHP Function Search
+tr      http://translate.google.com/translate?u=%r&tl=%s					Translate the current page
+w       http://wikipedia.org/wiki/Special:Search/%s_         				Wikipedia Search
+read 	script://www.readability.com/bookmarklet/read.js					Readability
+wa		http://www.wolframalpha.com/input/?i=%s								Wolfram Alpha Search
+home	http://192.168.2.215	home page
+
